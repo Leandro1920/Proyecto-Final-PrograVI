@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            x:Class="PrograVI_Final_Project.ModelView.SignupPage"
+             BackgroundColor="#F7F5F4"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         Margin="25">
+                <Label TextColor="#CE0B06"
+                       Text="Inicio de Sesion"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="30,0,30,0" />
+                <Frame HasShadow="True"
+                       Padding="25"
+                       Margin="0,30,0,0">
+                    <StackLayout>
+                        <Label Text="Creacion de Cuenta"
+                               FontAttributes="Bold"
+                               FontSize="Title"
+                               HorizontalOptions="Center"
+                               TextColor="#CE0B06" />
+                        <Entry Placeholder="Full Name"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="EntName"
+                               Keyboard="Text" />
+                        <Entry Placeholder="Email"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="EntEmail"
+                               Keyboard="Email" />
+                        <Entry Placeholder="Password"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="EntPassword"
+                               Keyboard="Default" />
+                        <Entry Placeholder="Confirm Password"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="EntConfirmPassword"
+                               Keyboard="Default" />
+                       
+                    </StackLayout>
+                </Frame>
+                <Button Text="CONTINUAR"
+                        TextColor="White"
+                        BackgroundColor="#6363AC"
+                        x:Name="BtnSignUp"
+                        Clicked="BtnSignUp_Clicked"/>
+                <Label Text="Ya posee una cuenta?"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#80574D" />
+                <Button Text="Login"
+                        BackgroundColor="#6363AC"
+                        TextColor="White"
+                        x:Name="BtnLogin" 
+                        Clicked="BtnLogin_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
